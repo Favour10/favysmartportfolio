@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>portfolio filtering</title>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+    <h2>Favy Smart College Gallery</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')">Graduates</button>
+  <button class="btn" onclick="filterSelection('cars')">CLassrooms</button>
+  <button class="btn" onclick="filterSelection('people')">Hostels</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="scholar1.png" alt="scholar1" style="width:100%">
+      <h4>Favy Smart graduates 2018</h4>
+      <p>picture of students whom graduated in the year 2018 with academic excellence</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="scholar2.png" alt="scholar2" style="width:100%">
+      <h4>Favy Smart graduates 2019</h4>
+      <p>Graduating ceremony of students in the year 2019</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="scholar3.png" alt="scholar3" style="width:100%">
+      <h4>Favy Smart graduates 2020</h4>
+      <p>picture of a graduating pupil from basic class</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="classroom1.png" alt="Car" style="width:100%">
+      <h4>Robert eve classroom</h4>
+      <p>pupils receiving lectures in their classrooms</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="classroom2.png" alt="Car" style="width:100%">
+      <h4>Morinson fibble lecture hall</h4>
+      <p> visual lectures going on in a hall </p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="classroom3.png" alt="Car" style="width:100%">
+      <h4>Green dave classroom</h4>
+      <p>Students being attentive as lecture goes on</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="hostel1.png" alt="People" style="width:100%">
+      <h4>hostel room</h4>
+      <p>a comfortable hostel rooms for students in the campus</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="hostel2.png" alt="People" style="width:100%">
+      <h4>School building</h4>
+      <p>school building with variety of classrooms and officess</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="hostel3.png" alt="People" style="width:100%">
+      <h4>Eatery</h4>
+      <p>A relaxable students eatery on hour of break</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+        
+        <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+            .footer-bottom{
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row, .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+        </style>
+        <div class="footer-bottom">
+            <p><b>Copyright &copy; Favy Smart 2020.</b></p></div>
+        <script src="portfolio%20filtering.js"></script>
+    </body>
+</html>
